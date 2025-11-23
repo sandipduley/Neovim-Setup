@@ -43,7 +43,12 @@ npm install -g tailwindcss-language-server
 npm install -g sql-language-server
 npm install -g typescript-language-server typescript
 ```
+---
 
+## You can install more LSP Servers using Mason
+```bash
+:Mason
+```
 ---
 
 ## 📁 Neovim Folder Structure
@@ -72,5 +77,6 @@ npm install -g typescript-language-server typescript
             ├── neotree.lua
             ├── none-ls.lua
             ├── telescope.lua
+---
             ├── treesitter.lua
             └── undotree.lua
