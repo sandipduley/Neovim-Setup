@@ -81,7 +81,7 @@ npm install -g typescript-language-server typescript
             └── undotree.lua
 ---
 
-## 🙂‍↕️ Special Thanks to Henry Misc
+## Special Thanks to Henry Misc
 His configuration helps make this Neovim setup possible.
 
 GitHub :- https://github.com/hendrikmi
