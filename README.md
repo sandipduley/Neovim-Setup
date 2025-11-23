@@ -77,6 +77,6 @@ npm install -g typescript-language-server typescript
             ├── neotree.lua
             ├── none-ls.lua
             ├── telescope.lua
----
             ├── treesitter.lua
             └── undotree.lua
+---
