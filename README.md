@@ -1,2 +1,76 @@
-# Neovim-Setup
-My neovim configuration  
+# 🌟 Neovim Setup
+
+A fast, modern, and highly customized Neovim configuration optimized for
+development.\
+This setup includes **LSP support, syntax highlighting, fuzzy finding,
+formatting, linting**, and various quality-of-life enhancements.
+
+---
+
+## 📌 Requirements
+
+You need **Neovim version above 0.10.x**.\
+Some plugins do not work well below **0.11.x**.
+
+If your version is lower, build Neovim from source:\
+https://github.com/neovim/neovim/blob/master/INSTALL.md
+
+### ✔️ Required
+
+1.  **Neovim** version **above 0.11.x**
+2.  **Lua 5.4**
+3.  **Nerd Fonts**
+4.  **LuaJIT**
+5.  Tools:
+    - `ripgrep`
+    - `fzf`
+    - `nodejs`
+    - `npm`
+    - `pip`
+    - `pipx`
+
+---
+
+## 📦 Install Global NPM LSP Servers
+
+```bash
+npm install -g vscode-langservers-extracted
+npm install -g bash-language-server
+npm install -g yaml-language-server
+npm install -g dockerfile-language-server-nodejs
+npm install -g docker-compose-language-service
+npm install -g tailwindcss-language-server
+npm install -g sql-language-server
+npm install -g typescript-language-server typescript
+```
+
+---
+
+## 📁 Neovim Folder Structure
+
+    nvim
+    ├── init.lua
+    ├── lazy-lock.json
+    ├── lazyvim.json
+    └── lua
+        ├── core
+        │   ├── keymaps.lua
+        │   ├── options.lua
+        │   └── snippets.lua
+        └── plugins
+            ├── alpha.lua
+            ├── autocompletion.lua
+            ├── bufferline.lua
+            ├── cmp.lua
+            ├── colortheme.lua
+            ├── comments.lua
+            ├── debug.lua
+            ├── indent-blankline.lua
+            ├── lsp.lua
+            ├── lualine.lua
+            ├── misc.lua
+            ├── neotree.lua
+            ├── none-ls.lua
+            ├── telescope.lua
+            ├── treesitter.lua
+            └── undotree.lua
