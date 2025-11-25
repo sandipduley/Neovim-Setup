@@ -1,22 +1,22 @@
--- Standalone plugins with less than 10 lines of config go here
+-- Small plugins that don’t need more than ~10 lines of setup
 return {
   {
-    -- autoclose tags
+    -- Auto-close HTML tags
     'windwp/nvim-ts-autotag',
   },
 
   {
-    -- detect tabstop and shiftwidth automatically
+    -- Automatically detect and set tab/indent settings (like tabstop, shiftwidth)
     'tpope/vim-sleuth',
   },
 
   {
-    -- Powerful Git integration for Vim
+    -- Easy Git commands inside Neovim
     'tpope/vim-fugitive',
   },
 
   {
-    -- Autoclose parentheses, brackets, quotes, etc.
+    -- Auto-close brackets, parentheses, quotes, etc.
     'windwp/nvim-autopairs',
     event = 'InsertEnter',
     config = true,
@@ -24,7 +24,7 @@ return {
   },
 
   {
-    -- Highlight todo, notes, etc in comments
+    -- Highlight TODO, NOTE, FIX, etc. inside comments
     'folke/todo-comments.nvim',
     event = 'VimEnter',
     dependencies = { 'nvim-lua/plenary.nvim' },
@@ -32,11 +32,12 @@ return {
   },
 
   {
-  'NvChad/nvim-colorizer.lua',
-  config = function()
-    require('colorizer').setup()
-  end,
-},
+    -- Show colors for hex codes like #ff00aa directly in the file
+    'NvChad/nvim-colorizer.lua',
+    config = function()
+      require('colorizer').setup()
+    end,
+  },
 
 }
 
