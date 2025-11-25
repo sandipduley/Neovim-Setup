@@ -26,12 +26,13 @@ https://github.com/neovim/neovim/blob/master/INSTALL.md
 7.  **fzf**
 8.  **go**
 9.  **python3**
-10.  **nodejs**
-11.  **npm**
-12.  **clang**
-13.  **gcc**
-14.  **make**
-15.  **cmake**
+10. **nodejs**
+11. **npm**
+12. **clang**
+13. **gcc**
+14. **make**
+15. **cmake**
+
 ---
 
 ## 📦 Install Global NPM LSP Servers
@@ -46,12 +47,29 @@ npm install -g tailwindcss-language-server
 npm install -g sql-language-server
 npm install -g typescript-language-server typescript
 ```
+
 ---
 
-## You can install more LSP Servers using Mason
+## ⚙️ You can install more LSP Servers using Mason
+
 ```bash
 :Mason
 ```
+
+---
+
+## 🔌 Installation
+
+```bash
+rm -rf ~/.config/nvim
+
+git clone --depth=1 https://github.com/sandipduley/Neovim-Setup.git
+
+cd Neovim-Setup
+
+cp -r nvim ~/.config/
+```
+
 ---
 
 ## 📁 Neovim Folder Structure
@@ -82,4 +100,5 @@ npm install -g typescript-language-server typescript
             ├── telescope.lua
             ├── treesitter.lua
             └── undotree.lua
+
 ---
