@@ -18,17 +18,20 @@ https://github.com/neovim/neovim/blob/master/INSTALL.md
 ### ✔️ Required
 
 1.  **Neovim** version **above 0.11.x**
-2.  **Lua 5.4**
-3.  **Nerd Fonts**
-4.  **LuaJIT**
-5.  Tools:
-    - `ripgrep`
-    - `fzf`
-    - `nodejs`
-    - `npm`
-    - `pip`
-    - `pipx`
-
+2.  **lua 5.4**
+3.  **luarocks**
+4.  **Nerd Fonts**
+5.  **LuaJIT**
+6.  **ripgrep**
+7.  **fzf**
+8.  **go**
+9.  **python3**
+10.  **nodejs**
+11.  **npm**
+12.  **clang**
+13.  **gcc**
+14.  **make**
+15.  **cmake**
 ---
 
 ## 📦 Install Global NPM LSP Servers
