@@ -67,8 +67,6 @@ git clone --depth=1 https://github.com/sandipduley/Neovim-Setup.git
 
 cd Neovim-Setup
 
-mkdir ~/.config/nvim
-
 cp -r nvim/ ~/.config/nvim/
 ```
 
