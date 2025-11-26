@@ -65,6 +65,14 @@ cp -r nvim/ ~/.config/nvim/
 
 ---
 
+## 🐋 Docker
+
+```bash
+docker run -it --name custom-name sandipduley/neovim /bin/bash
+```
+
+---
+
 ## 📁 Neovim Folder Structure
 
     nvim
