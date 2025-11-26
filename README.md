@@ -39,13 +39,6 @@ https://github.com/neovim/neovim/blob/master/INSTALL.md
 
 ```bash
 npm install -g vscode-langservers-extracted
-npm install -g bash-language-server
-npm install -g yaml-language-server
-npm install -g dockerfile-language-server-nodejs
-npm install -g docker-compose-language-service
-npm install -g tailwindcss-language-server
-npm install -g sql-language-server
-npm install -g typescript-language-server typescript
 ```
 
 ---
