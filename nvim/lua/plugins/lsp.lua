@@ -17,13 +17,6 @@ return {
     },
 
     'hrsh7th/cmp-nvim-lsp',
-
-    -- Tiny-inline-diagnostic
-    {
-      'rachartier/tiny-inline-diagnostic.nvim',
-      event = 'LspAttach',
-      opts = {},
-    },
   },
 
   config = function()
@@ -82,11 +75,6 @@ return {
       end,
     })
 
-    -- ⭐ Disable default virtual_text so tiny-inline-diagnostic can handle inline errors cleanly
-    vim.diagnostic.config({
-      virtual_text = false,
-    })
-
     local capabilities = vim.lsp.protocol.make_client_capabilities()
     capabilities = vim.tbl_deep_extend('force', capabilities, require('cmp_nvim_lsp').default_capabilities())
 
@@ -137,6 +125,7 @@ return {
       html = { filetypes = { 'html', 'twig', 'hbs' } },
       cssls = {},
       clangd = {},
+      gopls = {},
       ts_ls = {
         settings = {
           javascript = { format = { enable = false } },
@@ -155,8 +144,6 @@ return {
       vim.lsp.enable(server)
     end
 
-    -- Initialize tiny-inline-diagnostic
-    require('tiny-inline-diagnostic').setup()
-  end,
+  end
 }
 
