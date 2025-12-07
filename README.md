@@ -81,9 +81,9 @@ docker run -it --name custom-name sandipduley/neovim /bin/bash
     ├── lazyvim.json
     └── lua
         ├── core
-        │   ├── keymaps.lua
-        │   ├── options.lua
-        │   └── snippets.lua
+        │   ├── keymaps.lua
+        │   ├── options.lua
+        │   └── snippets.lua
         └── plugins
             ├── alpha.lua
             ├── autocompletion.lua
@@ -92,6 +92,7 @@ docker run -it --name custom-name sandipduley/neovim /bin/bash
             ├── colortheme.lua
             ├── comments.lua
             ├── debug.lua
+            ├── gitsigns.lua
             ├── indent-blankline.lua
             ├── lsp.lua
             ├── lualine.lua
@@ -99,7 +100,8 @@ docker run -it --name custom-name sandipduley/neovim /bin/bash
             ├── neotree.lua
             ├── none-ls.lua
             ├── telescope.lua
+            ├── tiny-inline-diagnostic.lua
             ├── treesitter.lua
             └── undotree.lua
 
----
+## 4 directories, 24 files
