@@ -184,3 +184,9 @@ vim.keymap.set('n', '<leader>sl', ':source .session.vim<CR>', {
   noremap = true, silent = false
 })
 
+-- =========================
+-- Tiny-inline-diagnostics
+-- =========================
+vim.keymap.set("n", "<leader>ed", "<cmd>TinyInlineDiag enable<cr>", { desc = "Enable diagnostics" })
+vim.keymap.set("n", "<leader>dd", "<cmd>TinyInlineDiag disable<cr>", { desc = "Disable diagnostics" })
+vim.keymap.set("n", "<leader>td", "<cmd>TinyInlineDiag toggle<cr>", { desc = "Toggle diagnostics" })
