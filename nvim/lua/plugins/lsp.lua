@@ -92,6 +92,7 @@ return {
 
     local servers = {
       lua_ls = {
+        cmd = { "/usr/bin/lua-language-server" },
         settings = {
           Lua = {
             completion = { callSnippet = 'Replace' },
