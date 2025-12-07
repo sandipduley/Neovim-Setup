@@ -104,4 +104,4 @@ docker run -it --name custom-name sandipduley/neovim /bin/bash
             ├── treesitter.lua
             └── undotree.lua
 
-## 4 directories, 24 files
+#### 4 directories, 24 files
