@@ -40,10 +40,18 @@ https://github.com/neovim/neovim/blob/master/INSTALL.md
 ```bash
 npm install -g vscode-langservers-extracted
 ```
-
 ---
 
-## ⚙️ You can install more LSP Servers using Mason
+## 📦 Install GO Tools 
+```bash
+go install golang.org/x/tools/cmd/goimports@latest
+go install mvdan.cc/gofumpt@latest
+go install honnef.co/go/tools/cmd/staticcheck@latest
+
+```
+---
+
+## ⚙️ You can install more LSP Servers, Formatter or Linter using Mason
 
 ```bash
 :Mason
