@@ -4,7 +4,9 @@ return {
     { 'mason-org/mason.nvim', config = true },
     'mason-org/mason-lspconfig.nvim',
     'WhoIsSethDaniel/mason-tool-installer.nvim',
-
+    -- REMOVE mason-lspconfig
+    'j-hui/fidget.nvim',
+    'hrsh7th/cmp-nvim-lsp',
     {
       'j-hui/fidget.nvim',
       opts = {
@@ -17,6 +19,7 @@ return {
     },
 
     'hrsh7th/cmp-nvim-lsp',
+
   },
 
   config = function()
@@ -125,7 +128,20 @@ return {
       html = { filetypes = { 'html', 'twig', 'hbs' } },
       cssls = {},
       clangd = {},
-      gopls = {},
+      gopls = {
+        settings = {
+          gopls = {
+            gofumpt = true,
+            staticcheck = true,
+          },
+        },
+        -- Format on save for all LSP-enabled buffers
+        vim.api.nvim_create_autocmd("BufWritePre", {
+          callback = function(event)
+            vim.lsp.buf.format({ bufnr = event.buf })
+          end,
+        })
+      },
       ts_ls = {
         settings = {
           javascript = { format = { enable = false } },
@@ -139,11 +155,10 @@ return {
     require('mason-tool-installer').setup { ensure_installed = ensure_installed }
 
     for server, cfg in pairs(servers) do
-      cfg.capabilities = vim.tbl_deep_extend('force', {}, capabilities, cfg.capabilities or {})
+      cfg.capabilities = capabilities
       vim.lsp.config(server, cfg)
       vim.lsp.enable(server)
     end
 
-  end
+ end
 }
-
