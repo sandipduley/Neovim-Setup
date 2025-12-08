@@ -21,6 +21,7 @@ return {
 				"stylua",
 				"ruff",
 				"gofmt",
+				"gopls",
 				"goimports",
 				"golangci_lint",
 				"shellcheck",
@@ -64,8 +65,8 @@ return {
 			require("none-ls.formatting.ruff_format"),
 
 			-- Go formatters & linter
-			formatting.gofmt,
-			formatting.goimports,
+			formatting.gofumpt,
+			formatting.goimports_reviser,
 			diagnostics.golangci_lint,
 
 			-- SQL formatter & linter
@@ -97,4 +98,5 @@ return {
 		})
 	end,
 }
+
 
