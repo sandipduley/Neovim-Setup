@@ -23,7 +23,24 @@ require("core.keymaps")
 -- Setup lazy.nvim and import plugins from lua/plugins/
 require("lazy").setup({
   spec = {
-    { import = "plugins" },
+     { import = "plugins.alpha" },
+     { import = "plugins.autocompletion" },
+     { import = "plugins.bufferline" },
+     { import = "plugins.cmp" },
+     { import = "plugins.colorscheme-switcher" },
+     { import = "plugins.comments" },
+     { import = "plugins.debug" },
+     { import = "plugins.gitsigns" },
+     { import = "plugins.indent-blankline" },
+     { import = "plugins.lsp" },
+     { import = "plugins.lualine" },
+     { import = "plugins.misc" },
+     { import = "plugins.neotree" },
+     { import = "plugins.none-ls" },
+     { import = "plugins.telescope" },
+     { import = "plugins.tiny-inline-diagnostic" },
+     { import = "plugins.treesitter" },
+     { import = "plugins.undotree" },
   },
   change_detection = { notify = false },
 
