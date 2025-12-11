@@ -40,15 +40,18 @@ https://github.com/neovim/neovim/blob/master/INSTALL.md
 ```bash
 npm install -g vscode-langservers-extracted
 ```
+
 ---
 
-## 📦 Install GO Tools 
+## 📦 Install GO Tools
+
 ```bash
 go install golang.org/x/tools/cmd/goimports@latest
 go install mvdan.cc/gofumpt@latest
 go install honnef.co/go/tools/cmd/staticcheck@latest
 
 ```
+
 ---
 
 ## ⚙️ You can install more LSP Servers, Formatter or Linter using Mason
@@ -83,33 +86,34 @@ docker run -it --name custom-name sandipduley/neovim /bin/bash
 
 ## 📁 Neovim Folder Structure
 
-    nvim
-    ├── init.lua
-    ├── lazy-lock.json
-    ├── lazyvim.json
-    └── lua
-        ├── core
-        │   ├── keymaps.lua
-        │   ├── options.lua
-        │   └── snippets.lua
-        └── plugins
-            ├── alpha.lua
-            ├── autocompletion.lua
-            ├── bufferline.lua
-            ├── cmp.lua
-            ├── colortheme.lua
-            ├── comments.lua
-            ├── debug.lua
-            ├── gitsigns.lua
-            ├── indent-blankline.lua
-            ├── lsp.lua
-            ├── lualine.lua
-            ├── misc.lua
-            ├── neotree.lua
-            ├── none-ls.lua
-            ├── telescope.lua
-            ├── tiny-inline-diagnostic.lua
-            ├── treesitter.lua
-            └── undotree.lua
+        nvim
+        ├── init.lua
+        ├── lazy-lock.json
+        ├── lazyvim.json
+        └── lua
+            ├── core
+            │   ├── keymaps.lua
+            │   ├── options.lua
+            │   └── snippets.lua
+            └── plugins
+                ├── alpha.lua
+                ├── autocompletion.lua
+                ├── bufferline.lua
+                ├── cmp.lua
+                ├── colorscheme-switcher.lua
+                ├── comments.lua
+                ├── debug.lua
+                ├── gitsigns.lua
+                ├── indent-blankline.lua
+                ├── lsp.lua
+                ├── lualine.lua
+                ├── misc.lua
+                ├── neotree.lua
+                ├── none-ls.lua
+                ├── smear-cursor.lua
+                ├── telescope.lua
+                ├── tiny-inline-diagnostic.lua
+                ├── treesitter.lua
+                └── undotree.lua
 
-#### 4 directories, 24 files
+### 4 directories, 25 files
