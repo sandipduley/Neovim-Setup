@@ -114,6 +114,7 @@ docker run -it --name custom-name sandipduley/neovim /bin/bash
                 ├── telescope.lua
                 ├── tiny-inline-diagnostic.lua
                 ├── treesitter.lua
-                └── undotree.lua
+                ├── undotree.lua
+                └── yazi.lua
 
-### 4 directories, 25 files
+### 4 directories, 26 files
