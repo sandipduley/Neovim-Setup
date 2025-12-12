@@ -27,7 +27,7 @@ require("lazy").setup({
      { import = "plugins.autocompletion" },
      { import = "plugins.bufferline" },
      { import = "plugins.cmp" },
-     { import = "plugins.colorscheme-switcher" },
+     { import = "plugins.colortheme-switcher" },
      { import = "plugins.comments" },
      -- { import = "plugins.debug" },
      { import = "plugins.gitsigns" },
