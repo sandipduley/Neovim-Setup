@@ -29,7 +29,7 @@ require("lazy").setup({
      { import = "plugins.cmp" },
      { import = "plugins.colorscheme-switcher" },
      { import = "plugins.comments" },
-     { import = "plugins.debug" },
+     -- { import = "plugins.debug" },
      { import = "plugins.gitsigns" },
      { import = "plugins.indent-blankline" },
      { import = "plugins.lsp" },
@@ -42,6 +42,7 @@ require("lazy").setup({
      { import = "plugins.treesitter" },
      { import = "plugins.undotree" },
      { import = "plugins.yazi" },
+     { import = "plugins.lazygit" },
   },
   change_detection = { notify = false },
 
