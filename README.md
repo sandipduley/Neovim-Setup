@@ -44,7 +44,7 @@ npm install -g vscode-langservers-extracted
 
 ---
 
-## 📦 Install GO Tools
+## 📦 Install GO Tools -- Only needed when you are working with golang
 
 ```bash
 go install golang.org/x/tools/cmd/goimports@latest
