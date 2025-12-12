@@ -87,35 +87,64 @@ docker run -it --name custom-name sandipduley/neovim /bin/bash
 
 ## 📁 Neovim Folder Structure
 
-        nvim
-        ├── init.lua
-        ├── lazy-lock.json
-        ├── lazyvim.json
-        └── lua
-            ├── core
-            │   ├── keymaps.lua
-            │   ├── options.lua
-            │   └── snippets.lua
-            └── plugins
-                ├── alpha.lua
-                ├── autocompletion.lua
-                ├── bufferline.lua
-                ├── cmp.lua
-                ├── colorscheme-switcher.lua
-                ├── comments.lua
-                ├── debug.lua
-                ├── gitsigns.lua
-                ├── indent-blankline.lua
-                ├── lsp.lua
-                ├── lualine.lua
-                ├── misc.lua
-                ├── neotree.lua
-                ├── none-ls.lua
-                ├── smear-cursor.lua
-                ├── telescope.lua
-                ├── tiny-inline-diagnostic.lua
-                ├── treesitter.lua
-                ├── undotree.lua
-                └── yazi.lua
+            nvim
+            ├── init.lua
+            ├── lazy-lock.json
+            ├── lazyvim.json
+            └── lua
+                ├── core
+                │   ├── keymaps.lua
+                │   ├── options.lua
+                │   └── snippets.lua
+                └── plugins
+                    ├── alpha.lua
+                    ├── autocompletion.lua
+                    ├── bufferline.lua
+                    ├── cmp.lua
+                    ├── colortheme-switcher.lua
+                    ├── comments.lua
+                    ├── debug.lua
+                    ├── gitsigns.lua
+                    ├── indent-blankline.lua
+                    ├── lazygit.lua
+                    ├── lsp.lua
+                    ├── lualine.lua
+                    ├── misc.lua
+                    ├── neotree.lua
+                    ├── none-ls.lua
+                    ├── smear-cursor.lua
+                    ├── telescope.lua
+                    ├── tiny-inline-diagnostic.lua
+                    ├── treesitter.lua
+                    ├── undotree.lua
+                    └── yazi.lua
 
-### 4 directories, 26 files
+### 4 directories, 27 files
+
+---
+
+## 🚧 Issue
+
+#### Failed to install ruff || python-lsp-server
+
+###### Arch
+
+```bash
+sudo pacman -Sy python3 pipx
+
+pipx install python-lsp-server
+```
+
+###### Ubuntu
+
+```bash
+sudo apt install python3 pipx
+
+pipx install python-lsp-server
+```
+
+###### Fedora
+
+```bash
+sudo dnf install python3-lsp-server
+```
