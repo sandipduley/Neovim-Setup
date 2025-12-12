@@ -20,8 +20,8 @@ https://github.com/neovim/neovim/blob/master/INSTALL.md
 1.  **Neovim** version **above 0.11.x**
 2.  **lua 5.4**
 3.  **luarocks**
-4.  **Nerd Fonts**
-5.  **LuaJIT**
+4.  **LuaJIT**
+5.  **Nerd Fonts**
 6.  **ripgrep**
 7.  **fzf**
 8.  **go**
@@ -32,6 +32,7 @@ https://github.com/neovim/neovim/blob/master/INSTALL.md
 13. **gcc**
 14. **make**
 15. **cmake**
+16. **shellcheck**
 
 ---
 
