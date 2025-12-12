@@ -35,12 +35,13 @@ require("lazy").setup({
      { import = "plugins.lsp" },
      { import = "plugins.lualine" },
      { import = "plugins.misc" },
-  -- { import = "plugins.neotree" },
+    -- { import = "plugins.neotree" },
      { import = "plugins.none-ls" },
      { import = "plugins.telescope" },
      { import = "plugins.tiny-inline-diagnostic" },
      { import = "plugins.treesitter" },
      { import = "plugins.undotree" },
+     { import = "plugins.smear-cursor" },
      { import = "plugins.yazi" },
      { import = "plugins.lazygit" },
   },
@@ -67,6 +68,27 @@ require("lazy").setup({
   },
 
 })
+vim.api.nvim_create_autocmd("BufRead", {
+  callback = function(opts)
+    vim.api.nvim_create_autocmd("BufWinEnter", {
+      once = true,
+      buffer = opts.buf,
+      callback = function()
+        local ft = vim.bo[opts.buf].filetype
+        local last_line = vim.api.nvim_buf_get_mark(opts.buf, '"')[1]
+        local total_lines = vim.api.nvim_buf_line_count(opts.buf)
 
- 
+        -- skip commit/rebase buffers
+        if (ft == "gitcommit" or ft == "gitrebase") then
+          return
+        end
+
+        if last_line > 1 and last_line <= total_lines then
+          -- jump to last position and center screen
+          vim.api.nvim_feedkeys([[g`"zz]], "n", false)
+        end
+      end,
+    })
+  end,
+})
 
