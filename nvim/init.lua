@@ -68,6 +68,8 @@ require("lazy").setup({
   },
 
 })
+
+-- Restore the cursor position
 vim.api.nvim_create_autocmd("BufRead", {
   callback = function(opts)
     vim.api.nvim_create_autocmd("BufWinEnter", {
