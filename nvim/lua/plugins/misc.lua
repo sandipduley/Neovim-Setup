@@ -10,10 +10,10 @@ return {
     'tpope/vim-sleuth',
   },
 
-  {
-    -- Easy Git commands inside Neovim
-    'tpope/vim-fugitive',
-  },
+  -- {
+  --   -- Easy Git commands inside Neovim
+  --   'tpope/vim-fugitive',
+  -- },
 
   {
     -- Auto-close brackets, parentheses, quotes, etc.
