@@ -190,3 +190,14 @@ vim.keymap.set('n', '<leader>sl', ':source .session.vim<CR>', {
 vim.keymap.set("n", "<leader>ed", "<cmd>TinyInlineDiag enable<cr>", { desc = "Enable diagnostics" })
 vim.keymap.set("n", "<leader>dd", "<cmd>TinyInlineDiag disable<cr>", { desc = "Disable diagnostics" })
 vim.keymap.set("n", "<leader>td", "<cmd>TinyInlineDiag toggle<cr>", { desc = "Toggle diagnostics" })
+
+-- ======================
+-- Disable Arrow Keys (Insert Mode Only)
+-- ======================
+
+local opts = { noremap = true, silent = true }
+
+vim.keymap.set('i', '<Up>', '<Nop>', opts)
+vim.keymap.set('i', '<Down>', '<Nop>', opts)
+vim.keymap.set('i', '<Left>', '<Nop>', opts)
+vim.keymap.set('i', '<Right>', '<Nop>', opts)
